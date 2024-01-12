@@ -3,12 +3,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: 200px;
+    /* width: 80%; */
 }
 
+/* Styling containers */
+
 .container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: repeat(7, 100px);
     gap: 10px;
+}
+
+.imageContainer{
+    border: 2px solid red;
+}
+
+.textContainer{
+    border: 2px solid blue;
 }
 
 .image1{
@@ -36,15 +51,4 @@
 
 .image6{
     grid-column: 9/ span 1;
-}
-
-img{
-    width: 100%;
-    /* background-size: cover; */
-    border-radius: 10px;
-}
-
-.flexing{
-    display: flex;
-    gap: 20px;
 }
